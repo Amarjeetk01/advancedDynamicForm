@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css";
+import './index.css'
 import SurveyForm from "./pages/SurveyForm";
 import SurveySummary from "./pages/SurveySummary";
 
