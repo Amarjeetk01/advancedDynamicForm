@@ -32,9 +32,16 @@ const SurveyForm = ({ setIsSubmitted, setFormData }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log("Form data:", formData);
+      // console.log("data:", formData);
       setFormData(formData);
       setIsSubmitted(true);
+    }
+  };
+
+  const handleExperienceChange = (e) => {
+    const value = e.target.value;
+    if (value >= 0) {
+      handleSectionChange("technology", "experience", value);
     }
   };
 
@@ -83,9 +90,7 @@ const SurveyForm = ({ setIsSubmitted, setFormData }) => {
               type="number"
               name="experience"
               value={formData.technology.experience}
-              handleChange={(e) =>
-                handleSectionChange("technology", "experience", e.target.value)
-              }
+              handleChange={handleExperienceChange}
               error={errors.technologyExperience}
             />
           </div>

@@ -8,8 +8,10 @@ export const validate = (formData) => {
   if (formData.surveyTopic === "Technology") {
     if (!formData.technology.language)
       errors.technologyLanguage = "Favorite Programming Language is required";
-    if (!formData.technology.experience)
+    if (formData.technology.experience === undefined || formData.technology.experience === null)
       errors.technologyExperience = "Years of Experience is required";
+    else if (formData.technology.experience < 0)
+      errors.technologyExperience = "Years of Experience cannot be negative";
   }
   if (formData.surveyTopic === "Health") {
     if (!formData.health.frequency)
