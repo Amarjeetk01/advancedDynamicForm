@@ -1,0 +1,10 @@
+{
+  "questions": [
+    { "topic": "Technology", "text": "What is your favorite tech blog?", "answer": "Techdfgf" },
+    { "topic": "Technology", "text": "How do you keep up with tech trends?", "answer": "xyz" },
+    { "topic": "Health", "text": "What is your favorite health app?", "answer": "MyFitness" },
+    { "topic": "Health", "text": "How do you manage stress?", "answer": "Meditation" },
+    { "topic": "Education", "text": "What is your favorite educational resource?", "answer": "abc" },
+    { "topic": "Education", "text": "How do you stay motivated to learn?", "answer": "Setting goals" }
+  ]
+}
